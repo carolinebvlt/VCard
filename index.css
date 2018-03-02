@@ -22,7 +22,8 @@ html, body{
   margin-left: -3px;
   height: 85vh;
   width: 100%;
-  /* border: 1px solid #00d8d6 ; */
+}
+#recto{
   display: flex;
   flex-direction: column;
   justify-content: space-around;
@@ -58,4 +59,13 @@ h3:hover{
 .contact i:hover{
   color: #c8d6e5;
   cursor: pointer;
+}
+#verso{
+  display: none;
+  border: 1px solid #00d8d6;
+  overflow-y: scroll;
+}
+xmp{
+  margin: 0;
+  margin-left: 5px;
 }

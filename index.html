@@ -16,10 +16,10 @@
 <body>
   <div class="main">
     <div class="mainContentBox">
-      <div class="card" id="card">
+      <div class="card" id="recto">
         <section class="titles" >
-          <h2 >Caroline Bieuvelet</h2>
-          <h1 >Junior Web Developer</h1>
+          <h2 onclick="switchView()">Caroline Bieuvelet</h2>
+          <h1>Junior Web Developer</h1>
         </section>
         <h3>Backend / PHP</h3>
         <section class="contact">
@@ -29,7 +29,55 @@
           <i title="Github" class="fa fa-github fa-4x" aria-hidden="true" onclick="window.open('https://github.com/carolinebvlt/','_blank')"></i>
         </section>
       </div>
+      <div class="card" id="verso">
+          <xmp>
+<?php
+namespace WebDev\Backend\PHP;
+
+class Caroline extends Humans
+{
+  private $personalInfo [
+              'first_name' => "Caroline",
+              'last_name' => "Bieuvelet",
+              'age' => 27,
+              'location' => "Brussels",
+              'email' => "caroline.bieuvelet@gmail.com",
+              'phone' => 0497.07.18.63,
+          ],
+          $goal,
+          $energy ;
+  public function __construct($challenge, $caffeine){
+    $this->goal = $challenge;
+    $this->energy = $caffeine;
+  }
+  public function work($environment){
+    switch ($environment) {
+      case 'noisy': parent::lookForCalm(); break;
+      default: parent::enjoyThePlace() ; break;
+    }
+    while (!$this->goal){
+      if($this->energy > 0){
+        $this->goal++
+      }
+      else{
+        parent::getCaffeine();
+      }
+    }
+  }
+  public function getPersonalInfo($courtesy){
+    switch ($courtesy) {
+      case true: return $this->personalInfo; break;
+      case false: return $answer = "Don't be rude, please !"; break;
+    }
+  }
+  public function getEnergy(){
+    exit("Don't touch my redbull !!!");
+  }
+}
+          </xmp>
+      </div>
     </div>
   </div>
+  <script src="animation.js"></script>
 </body>
 </html>
