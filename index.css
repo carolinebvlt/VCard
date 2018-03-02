@@ -27,17 +27,6 @@ html, body{
   flex-direction: column;
   justify-content: space-around;
 }
-.arrow{
-  height: 100vh;
-  width: 10%;
-  display: flex;
-}
-.arrow i {
-  color: #00d8d6;
-  text-align: center;
-  margin: auto;
-  display: block;
-}
 h1, h2{
   font-size: 1.8em;
 }
@@ -48,6 +37,11 @@ h1, h2, h3{
 h3{
   margin: 0;
 }
+h1:hover,
+h2:hover,
+h3:hover{
+  cursor: default;
+}
 .contact {
   color:#00d8d6;
   width: 100%;
@@ -56,5 +50,9 @@ h3{
 }
 .contact a{
   color: #00d8d6;
-
+}
+.contact a:hover,
+.contact i:hover{
+  color: #c8d6e5;
+  cursor: pointer;
 }
