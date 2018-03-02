@@ -29,22 +29,23 @@ html, body{
   justify-content: space-around;
 }
 h1{
-  margin-bottom: 0
+  font-size: 1.8em;
+  margin-top: -5%
+}
+h2{
+  font-size: 2.5em;
+  color: #00d8d6;
 }
 h1, h2{
-  font-size: 1.8em;
-}
-h1, h2, h3{
   text-align: center;
   font-family: 'Roboto Mono', monospace;
 }
-h3{
-  margin: 0;
-}
 h1:hover,
-h2:hover,
-h3:hover{
+h2:hover,{
   cursor: default;
+}
+h2:hover{
+  cursor: pointer;
 }
 .contact {
   color:#00d8d6;

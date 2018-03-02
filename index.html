@@ -17,16 +17,13 @@
   <div class="main">
     <div class="mainContentBox">
       <div class="card" id="recto">
-        <section class="titles" >
-          <h2 onclick="switchView()">Caroline Bieuvelet</h2>
-          <h1>Junior Web Developer</h1>
-        </section>
-        <h3>Backend / PHP</h3>
+        <h2 onclick="switchView()">Caroline Bieuvelet</h2>
+        <h1 class="text"></h1>
         <section class="contact">
-          <a title="caroline.bieuvelet@gmail.com" href="mailto:caroline.bieuvelet@gmail.com"><i class="fa fa-at fa-4x"></i></a>
-          <a title="0497/07.18.63" href="tel:0497071863"><i class="fa fa-phone fa-4x"></i></a>
-          <i title="Linkedin"class="fa fa-linkedin fa-4x" aria-hidden="true" onclick="window.open('https://www.linkedin.com/in/caroline-bieuvelet','_blank')"></i>
-          <i title="Github" class="fa fa-github fa-4x" aria-hidden="true" onclick="window.open('https://github.com/carolinebvlt/','_blank')"></i>
+          <a title="caroline.bieuvelet@gmail.com" href="mailto:caroline.bieuvelet@gmail.com"><i class="fa fa-at fa-3x"></i></a>
+          <a title="0497/07.18.63" href="tel:0497071863"><i class="fa fa-phone fa-3x"></i></a>
+          <i title="Linkedin"class="fa fa-linkedin fa-3x" aria-hidden="true" onclick="window.open('https://www.linkedin.com/in/caroline-bieuvelet','_blank')"></i>
+          <i title="Github" class="fa fa-github fa-3x" aria-hidden="true" onclick="window.open('https://github.com/carolinebvlt/','_blank')"></i>
         </section>
       </div>
       <div class="card" id="verso">
@@ -42,7 +39,7 @@ class Caroline extends Humans
               'age' => 27,
               'location' => "Brussels",
               'email' => "caroline.bieuvelet@gmail.com",
-              'phone' => 0497.07.18.63,
+              'phone' => "0497.07.18.63",
           ],
           $goal,
           $energy ;
@@ -79,5 +76,6 @@ class Caroline extends Humans
     </div>
   </div>
   <script src="animation.js"></script>
+  <script src="scramble.js"></script>
 </body>
 </html>
