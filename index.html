@@ -7,17 +7,14 @@
   <link rel="stylesheet" href="index.css">
   <link href="https://fonts.googleapis.com/css?family=Roboto+Condensed|Roboto+Mono" rel="stylesheet">
   <script src="https://use.fontawesome.com/7a8f184185.js"></script>
-
-
   <link rel="stylesheet" media="screen and (max-width: 479px)" href="smartphone_portrait.css" />
-
   <title>Caroline Bieuvelet</title>
 </head>
 <body>
   <div class="main">
     <div class="mainContentBox">
       <div class="card" id="recto">
-        <h2 onclick="switchView()">Caroline Bieuvelet</h2>
+        <h2 onclick="switchVerso()">Caroline Bieuvelet</h2>
         <h1 class="text"></h1>
         <section class="contact">
           <a title="caroline.bieuvelet@gmail.com" href="mailto:caroline.bieuvelet@gmail.com"><i class="fa fa-at fa-3x"></i></a>
@@ -27,6 +24,9 @@
         </section>
       </div>
       <div class="card" id="verso">
+        <section id="close">
+          <i class="fa fa-times-circle fa-3x" onclick="switchRecto()"></i>
+        </section>
           <xmp>
 <?php
 namespace WebDev\Backend\PHP;
