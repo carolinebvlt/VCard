@@ -29,6 +29,7 @@
         </section>
           <xmp>
 <?php
+
 namespace WebDev\Backend\PHP;
 
 class Caroline extends Humans
@@ -43,10 +44,12 @@ class Caroline extends Humans
           ],
           $goal,
           $energy ;
+
   public function __construct($challenge, $caffeine){
     $this->goal = $challenge;
     $this->energy = $caffeine;
   }
+
   public function work($environment){
     switch ($environment) {
       case 'noisy': parent::lookForCalm(); break;
@@ -61,12 +64,14 @@ class Caroline extends Humans
       }
     }
   }
+
   public function getPersonalInfo($courtesy){
     switch ($courtesy) {
       case true: return $this->personalInfo; break;
       case false: return $answer = "Don't be rude, please !"; break;
     }
   }
+  
   public function getEnergy(){
     exit("Don't touch my redbull !!!");
   }
