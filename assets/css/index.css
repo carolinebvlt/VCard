@@ -9,7 +9,7 @@ html, body{
   color: #c8d6e5;
   display: flex;
   justify-content: space-around;
-  /* font-family: 'Roboto Condensed', sans-serif; */
+  font-family: 'Roboto Condensed', sans-serif;
 }
 .mainContentBox{
   height: 100vh;
@@ -40,12 +40,12 @@ h1, h2{
   text-align: center;
   font-family: 'Roboto Mono', monospace;
 }
-h1:hover,
-h2:hover,{
+h1:hover{
   cursor: default;
 }
 h2:hover{
   cursor: pointer;
+  color: #c8d6e5;
 }
 .contact {
   color:#00d8d6;
@@ -76,4 +76,24 @@ xmp{
   margin-right: 10px;
   margin-top: 5px;
   color: #00d8d6;
+}
+
+button{
+  width: 150px;
+  height: 50px;
+  display: block;
+  margin: auto;
+  margin-top: 0;
+  margin-bottom: 20px;
+  border-radius: 10px;
+  border: solid #00d8d6 5px;
+  font-size: 1.3em;
+  font-family: 'Roboto Condensed', sans-serif;
+  background-color: #c8d6e5;
+  font-weight: bold;
+  color:  #1e272e;
+}
+button:hover{
+  cursor: pointer;
+  background-color: silver;
 }
