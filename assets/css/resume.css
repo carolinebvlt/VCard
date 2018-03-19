@@ -53,3 +53,17 @@ header{
 #education ul{
   text-align: left;
 }
+#download a{
+  text-align: center;
+  margin: auto;
+  display: block;
+  margin-bottom: 20px;
+  color: #00d8d6;
+  text-decoration: underline;
+  font-style: italic;
+  font-size: 0.8em;
+}
+#download a:hover{
+  cursor: pointer;
+  color: #c8d6e5;
+}
